@@ -1,9 +1,5 @@
 docker build -t my-ubuntu-image .
 
 #docker run -it my-ubuntu-image
-docker run -it --rm \
-       -e DISPLAY=192.168.0.8:0 \
-       -v /tmp/.X11-unix:/tmp/.X11-unix \
-       my-ubuntu-image
+docker run -it --rm -p 8888:8888 my-ubuntu-image
 
-apt-get install python3-tk
