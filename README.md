@@ -1,3 +1,4 @@
-# DockerTestground
-Testing how to create a docker image. The goal is to create a self-contained docker image for my programming / imaging classes.
+# Docker Source Library
+A collection of docker projects, mostly for classes I teach.
 
+* [Testground](https://github.com/sathayas/DockerSourceLibrary/edit/master/Testground): A test ground to test docker commands.
