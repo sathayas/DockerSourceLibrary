@@ -1,0 +1,8 @@
+docker build -t ubuntu-python3 .
+
+docker run -it --rm -p 8888:8888 \
+-v /Users/sh45474/Documents/Research/Project/DockerMaterials/DockerSourceLibrary/Testground/JupyterNotebook:/tmp/JupyterNotebook \
+ubuntu-python3
+
+
+
