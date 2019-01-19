@@ -8,3 +8,4 @@ scikit-learn
 networkx
 nltk
 wordcloud
+graphviz
