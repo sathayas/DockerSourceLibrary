@@ -21,4 +21,4 @@ RUN jupyter contrib nbextension install --user
 RUN jupyter nbextension enable spellchecker/main
 
 # Downloading all the corpora for NLTK
-RUN python -m nltk.downloader all
+RUN python3 -m nltk.downloader all
