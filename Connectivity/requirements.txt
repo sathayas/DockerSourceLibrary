@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+pandas
+ipython
+jupyter
+scikit-learn
+networkx
+nltk
+wordcloud
+graphviz
