@@ -1,6 +1,6 @@
-docker build -t python-analytics-bundle .
+docker build -t python-fsl-bundle .
 
-docker run -it --rm -p 8888:8888 python-analytics-bundle
+docker run -it --rm -p 8888:8888 python-fsl-bundle
 
 
 
