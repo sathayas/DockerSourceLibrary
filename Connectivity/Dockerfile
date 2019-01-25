@@ -26,7 +26,4 @@ RUN jupyter nbextension enable spellchecker/main
 # install fsl
 RUN python /tmp/fslinstaller.py -D -E -d /usr/local/fsl
 
-# setting up FSL path
-ENV FSLDIR=/usr/local/fsl/5.0
-ENV PATH=$PATH:$FSLDIR/bin
 
