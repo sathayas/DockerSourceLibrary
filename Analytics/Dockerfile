@@ -27,7 +27,7 @@ RUN wget -O- http://neuro.debian.net/lists/xenial.us-tn.full | tee /etc/apt/sour
 RUN apt-key adv --recv-keys --keyserver hkp://pool.sks-keyservers.net:80 0xA5D32F012649A5A9
 
 # install fsl
-RUN apt-get install -y fsl-complete
+RUN apt-get install -y fsl-5.0-complete
 
 # setting up FSL path
 ENV FSLDIR=/usr/share/fsl/5.0
