@@ -4,8 +4,9 @@ matplotlib
 pandas
 ipython
 jupyter
-scikit-learn
 networkx
-nltk
-wordcloud
+python-louvain
 graphviz
+nibabel
+nipype
+pybids
