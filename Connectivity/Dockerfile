@@ -2,9 +2,12 @@ FROM ubuntu
 
 # Install software tools
 RUN apt-get upgrade && apt-get update && apt-get install -y \
+    	    python \
     	    python3 \
 	    python3-pip \
 	    graphviz \
+	    wget \
+	    jq \
 	    git
 
 # installing Python libraries
@@ -20,5 +23,10 @@ RUN pip3 install jupyter_contrib_nbextensions
 RUN jupyter contrib nbextension install --user
 RUN jupyter nbextension enable spellchecker/main
 
-# Downloading all the corpora for NLTK
-RUN python3 -m nltk.downloader book
+# install fsl
+RUN apt-get install -y fsl-5.0-core
+
+# setting up FSL path
+ENV FSLDIR=/usr/local/fsl/5.0
+ENV PATH=$PATH:$FSLDIR/bin
+
