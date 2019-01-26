@@ -1,0 +1,12 @@
+numpy
+scipy
+matplotlib
+pandas
+ipython
+jupyter
+networkx
+python-louvain
+graphviz
+nibabel
+nipype
+pybids

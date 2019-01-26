@@ -1,0 +1,7 @@
+docker build -t python-fsl-bundle .
+
+docker run -it --rm -p 8888:8888 python-fsl-bundle
+
+
+
+
