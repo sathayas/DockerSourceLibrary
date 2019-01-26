@@ -7,6 +7,4 @@ jupyter
 networkx
 python-louvain
 graphviz
-nibabel
-nipype
-pybids
+
