@@ -1,9 +1,11 @@
 FROM ubuntu
 
 # Install software tools
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get upgrade && apt-get update && apt-get install -y \
     	    python3 \
 	    python3-pip \
+	    python3-tk \
 	    graphviz \
 	    git
 
