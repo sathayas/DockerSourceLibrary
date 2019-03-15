@@ -10,6 +10,8 @@ RUN apt-get upgrade && apt-get update && apt-get install -y \
 	    graphviz \
 	    wget \
 	    jq \
+	    libopenblas-base \
+	    mricron \
 	    git
 
 # installing Python libraries
@@ -30,4 +32,10 @@ RUN python /tmp/fslinstaller.py -D -E -d /usr/local/fsl
 
 # setting up fsl paths
 RUN cat ./FSLDir.sh >> ~/.bashrc
+
+# setting some variables
+ENV LD_LIBRARY_PATH=/usr/lib/openblas-base/
+ENV USER=root
+
+
 
