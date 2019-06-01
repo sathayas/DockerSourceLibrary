@@ -5,10 +5,10 @@ COPY sources /etc/apt/sources.list.d/neurodebian.sources.list
 # Install software tools
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get upgrade && apt-get update && apt-get install -y \
-    	    python \
-    	    python3 \
+    	python \
+    	python3 \
 	    python3-pip \
-            python3-tk \
+      python3-tk \
 	    graphviz \
 	    wget \
 	    jq \
