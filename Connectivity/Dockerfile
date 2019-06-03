@@ -44,3 +44,16 @@ RUN echo ". /etc/fsl/5.0/fsl.sh" >> /root/.bashrc
 # setting some variables
 ENV LD_LIBRARY_PATH=/usr/lib/openblas-base/
 ENV USER=root
+
+# FSLeyes installation -- first, preparation
+RUN pip3 install -f https://extras.wxpython.org/wxPython4/extras/linux/gtk2/ubuntu-16.04 wxpython
+RUN apt-get install -y build-essential && \
+    apt-get install -y libgtk2.0-dev libgtk-3-dev \
+                       libwebkitgtk-dev libwebkitgtk-3.0-dev && \
+    apt-get install -y libjpeg-turbo8-dev libtiff5-dev \
+                       libsdl1.2-dev libgstreamer1.0-dev \
+                       libgstreamer-plugins-base1.0-dev \
+                       libnotify-dev freeglut3-dev
+
+# Actual FSLeyes installation via pip3
+RUN pip3 install fsleyes
