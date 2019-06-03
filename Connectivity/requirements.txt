@@ -10,3 +10,6 @@ graphviz
 nibabel
 nipype
 pybids
+scikit-learn
+scikit-image
+nilearn
