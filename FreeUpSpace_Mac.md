@@ -1,4 +1,4 @@
-***Information in this document pertains to Docker Tookbox on Mac, explaining steps on how to free up diskspace 
+***Information in this document pertains to Docker Toolbox on Mac, explaining steps on how to free up diskspace 
 by removing Docker related files***
 
 ### Step 1: Remove machines
