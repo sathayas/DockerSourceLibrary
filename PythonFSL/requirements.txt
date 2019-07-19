@@ -13,3 +13,4 @@ pybids
 scikit-learn
 scikit-image
 nilearn
+nistats
